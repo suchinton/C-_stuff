@@ -8,7 +8,7 @@ int eve_odd(int);
 int p_np(int);
 int fact(int);
 int table(int);
-int pal(int);
+int pal(long int);
 int arm(int);
 int fibo(int);
 
@@ -16,7 +16,8 @@ int main()
     {
         system("clear");    //used instead of clrscr();
         AGAIN: cout<<"\n\t  Pick an Option";            //menu
-        int a=0,n; char ch;                           
+		long int n;
+        int a=0; char ch;                           
         cout<<"\n\t=================="; 
         cout<<"\n\n1) Even or odd";
         cout<<"\n2) Prime or not";
@@ -137,9 +138,9 @@ int table(int n)            //fn to display the table of a no. (1 to 10)
         cout<<endl;
     }
 
-int pal(int n)              //fn to check for a palindrome
+int pal(long int n)              //fn to check for a palindrome
     {
-        int rev=0,last,pali=n;
+        long int rev=0,last,pali=n;
         while(n>0)
             {
                 last=n%10;
