@@ -1,4 +1,5 @@
 #include<iostream>
+#include <unistd.h>
 
 using namespace std;
 
@@ -13,70 +14,76 @@ int fabo(int);
 int main()
     {
         system("clear");    //used instead of clrscr();
-
-        int a=0,n;
-        AGAIN: cout<<"\nPick an Option";             //menu
-        cout<<"\n =================="; 
+        AGAIN: cout<<"\n\t  Pick an Option";            //menu
+        int a=0,n; char ch;                           
+        cout<<"\n\t=================="; 
         cout<<"\n\n1) Even or odd";
         cout<<"\n2) Prime or not";
         cout<<"\n3) Factorial";
         cout<<"\n4) Table";
         cout<<"\n5) Palindrome";
         cout<<"\n6) Armstrong no";
-        cout<<"\n7) Fabonacci series";   
-        cout<<"\n8) Exit";
-        cout<<"\n\nchoose your option: "; cin>>a;       
-
-       switch(a)
+        cout<<"\n7) Fabonacci series"; 
+        cout<<"\n8) clear screen";  
+        cout<<"\n9) Exit";
+        cout<<"\n\n\tchoose your option: "; cin>>a;       
+        switch(a)
             {
                 case 1:
                     {
                         cout<<"\nenter your number: "; cin>>n;
                         eve_odd(n);
-                        getchar();
-                        goto AGAIN;
+                        break;
                     }
                 case 2:
                     {
-                        cout<<"\nenter your number: "; cin>>n; 
+                        cout<<"\nenter your number: "; cin>>n;
                         p_np(n);
-                        goto AGAIN;
+                        break;
                     }   
                 case 3:
                     {
-                        cout<<"\nenter your number: "; cin>>n; 
+                        cout<<"\nenter your number: "; cin>>n;
                         fact(n);
-                        goto AGAIN;
+                        break;
                     }
                 case 4:
                     {
-                        cout<<"\nenter your number: "; cin>>n; 
+                        cout<<"\nenter your number: "; cin>>n;
                         table(n);
-                        goto AGAIN;
+                        break;
                     }
                 case 5:
                     {
-                        cout<<"\nenter your number: "; cin>>n; 
+                        cout<<"\nenter your number: "; cin>>n;
                         pal(n);
-                        goto AGAIN;
+                        break;
                     }
                 case 6:
                     {
-                        cout<<"\nenter your number: "; cin>>n; 
+                        cout<<"\nenter your number: "; cin>>n;
                         arm(n);
-                        goto AGAIN;
+                        break;
                     }
                 case 7:
                     {
-                        cout<<"\nenter your number: "; cin>>n; 
+                        cout<<"\nenter your number: "; cin>>n;
                         fabo(n);
+                        break;
+                    }
+                case 8:
+                    {
+                        system("clear");
                         goto AGAIN;
+                        break;
                     }
                 default:
                     {
-                        system("exit");
+                        exit(0);
                     }
             }
+        sleep(5);           //sleeps for 3 second
+        goto AGAIN;
         return 0;
     }
 
