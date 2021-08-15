@@ -5,6 +5,6 @@ prog to check
 4) table
 5) palindrome
 6) armstong no.
-7) fabonacci series 
+7) fibonacci series 
 
  

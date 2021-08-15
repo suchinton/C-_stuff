@@ -1,4 +1,5 @@
 #include<iostream>
+#include<math.h>
 #include <unistd.h>
 
 using namespace std;
@@ -9,7 +10,7 @@ int fact(int);
 int table(int);
 int pal(int);
 int arm(int);
-int fabo(int);
+int fibo(int);
 
 int main()
     {
@@ -23,9 +24,10 @@ int main()
         cout<<"\n4) Table";
         cout<<"\n5) Palindrome";
         cout<<"\n6) Armstrong no";
-        cout<<"\n7) Fabonacci series"; 
-        cout<<"\n8) clear screen";  
-        cout<<"\n9) Exit";
+        cout<<"\n7) fibonacci series"; 
+        cout<<"\n8) screen shot";
+        cout<<"\n9) clear screen";  
+        cout<<"\n10) Exit";
         cout<<"\n\n\tchoose your option: "; cin>>a;       
         switch(a)
             {
@@ -68,10 +70,15 @@ int main()
                 case 7:
                     {
                         cout<<"\nenter your number: "; cin>>n;
-                        fabo(n);
+                        fibo(n);
                         break;
                     }
                 case 8:
+                    {
+                        system("gnome-screenshot");
+                        break;
+                    }
+                case 9:
                     {
                         system("clear");
                         goto AGAIN;
@@ -144,14 +151,41 @@ int pal(int n)              //fn to check for a palindrome
         else
             cout<<"\n"<<pali<<" is not a palindrome"<<endl;
     }
+
 int arm(int n)              //fn to check for armstron number 
     {
-        int rem;
-        do{
-            rem=n%10;
-        }while(rem>0);
-    }
-int fabo(int n)             //fn to check fabonachi series
-    {
+        int len=0,copy=n,arms=0,last;
+        do                      //to find no. of digits 
+            {
+                copy=copy/10;
+                len++;
+            }while (copy>0);
 
+        copy=n;
+
+        for(int i=len;i>0;i--)
+            {
+                last=copy%10;
+                copy=copy/10;
+                arms=arms+pow(last,len);
+            }
+        if(arms==n)
+            cout<<"\n"<<n<<" is an armstrong no."<<endl;
+        else 
+            cout<<"\n"<<n<<" is not an armstrong no."<<endl;
+        //cbieub
+    }
+
+int fibo(int n)             //fn to check fibonachi series
+    {
+        int n1=0, n2=1, nextno=n1+n2;
+        cout<<"\nF("<<n<<")= "<<n1<<", "<<n2;
+        for(int i=3; i<=n+1; ++i)
+            {
+                    cout<<", "<<nextno;
+                n1=n2;
+                n2=nextno;
+                nextno=n1+n2;
+            }
+        cout<<endl;
     }
