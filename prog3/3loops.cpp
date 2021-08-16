@@ -1,5 +1,4 @@
 #include<iostream>
-
 #include <unistd.h>
 
 using namespace std;
@@ -50,11 +49,13 @@ int main()
                         system("exit");
                     }
             }
+
         int ans='y';
         cout<<"\n\nwould you like to take a screenshot of the output?(Y/n): ";
         cin>>ans;
         if(ans=='y')
             system("gnome-screenshot");
+            
     }
 
 int forloop(int n)             //fn to check Fibonachi series
@@ -71,7 +72,7 @@ int forloop(int n)             //fn to check Fibonachi series
         cout<<endl;
     }
 
-int whileloop(int n)
+int whileloop(int n)            //fn to table of given no. n (0-10)-[while]
     {
         int i=0;
         while(i<=10)
@@ -81,7 +82,7 @@ int whileloop(int n)
             }
     }
 
-int do_whileloop(int n)
+int do_whileloop(int n)         //fn to display line of length n-[do while]
     {
         int i=0;
         do
