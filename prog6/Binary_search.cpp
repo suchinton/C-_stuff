@@ -38,8 +38,8 @@ int binarySearch(int A[],int l,int r,int search);
 
       else if(A[result]==search && A[result+1]==search)
          {
-            cout<<"\nElement is present at position " << result<<endl;
             cout<<"\nElement is present at position " << result+1<<endl;
+            cout<<"\nElement is present at position " << result+2<<endl;
          }
 
       else if(A[result]==search && A[result-1]==search)
@@ -48,13 +48,6 @@ int binarySearch(int A[],int l,int r,int search);
             cout<<"\nElement is present at position " << result+1<<endl;
          }
 
-      else if(A[result+1]==search && A[result-1]==search && A[result]==search)
-         {
-            cout<<"\nElement is present at position " << result<<endl;
-            cout<<"\nElement is present at position " << result+1<<endl;
-            cout<<"\nElement is present at position " << result+2<<endl;
-            system("exit");
-         }
       else if(A[result]==search)
          cout<<"\nElement is present at position " << result+1<<endl;
 
