@@ -9,8 +9,8 @@ int binarySearch(int A[],int l,int r,int search);
    {
       system("clear");
 
-      cout<<"\nBinar_search-[Bubble sort]";
-      cout<<"\n--------------------------";
+      cout<<"\n\tBinary_search-[Bubble sort]";
+      cout<<"\n\t--------------------------";
 
       int len, search,result;
       cout<<"\nEnter no. of elements you wish to enter: ";

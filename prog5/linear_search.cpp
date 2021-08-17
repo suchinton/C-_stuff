@@ -7,8 +7,8 @@ using namespace std;
    {
       system("clear");
 
-      cout<<"\nLinear Search";
-      cout<<"\n-------------";
+      cout<<"\n\tLinear Search";
+      cout<<"\n\t-------------";
 
       int len,search;
       cout<<"\nEnter no. of elements you wish to enter: ";
