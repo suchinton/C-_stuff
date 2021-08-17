@@ -1,0 +1,1 @@
+prog to perform binary search on user defined arr
