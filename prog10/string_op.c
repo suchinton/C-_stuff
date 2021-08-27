@@ -1,14 +1,22 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
+
+const char *substring(char str1[20],int f,int t);
+const char *rev(char str1[20]);
+const char *pal(char str1[20]);
+
 int main()
 {
     system("clear");
 
     int n,f,t;
-    char str1[20],str2[20]; 
+    char str1[20],str2[20];
 
-    printf("\n\tString Operations");
+    printf("\n\nEnter your string: ");          //Enter String
+    scanf("%s",&str1); 
+
+    printf("\n\tString Operations");            //Menu
     printf("\n\t+++++++++++++++++");
 
     printf("\n1) String length");
@@ -18,24 +26,21 @@ int main()
     printf("\n5) Substring");
     printf("\n6) Reverse String");
     printf("\n7) Palindrome");
-
+    printf("\n8) Exit");
+    
     printf("\n\nEnter you choice: ");
     scanf("%d",&n);
-
+    
     switch (n)
     {
-    case 1:
+    case 1: //output len of string
             {
-                printf("\nEnter your string: ");
-                scanf("%s",str1);
                 printf("\n Length of entered string is: %i \n",strlen(str1));
                 break;
             }
 
-    case 2:
+    case 2: //output string copy
             {
-                printf("\nEnter your first string: ");
-                scanf("%s",str1);
                 printf("\nEnter your second string: ");
                 scanf("%s",str2);
                 strcpy(str1,str2);
@@ -43,10 +48,8 @@ int main()
                 break;
             }
     
-    case 3:
+    case 3: //concatenates two strings
             {
-                printf("\nEnter your first string: ");
-                scanf("%s",str1);
                 printf("\nEnter your second string: ");
                 scanf("%s",str2);
                 strcat(str1,str2);
@@ -54,10 +57,8 @@ int main()
                 break;  
             }
 
-    case 4:
+    case 4: //compare two strings
             {
-                printf("\nEnter your first string: ");
-                scanf("%s",str1);
                 printf("\nEnter your second string: ");
                 scanf("%s",str2);
                 if(strcmp(str1,str2)==0)
@@ -67,27 +68,91 @@ int main()
                 break;
             }
 
-    case 5:
+    case 5: //output substring 
             {
-                printf("\nEnter your string: ");
-                scanf("%s",str1);
                 printf("\nsubstring from: ");
-                scanf("%i",f);
-                printf(" to: ");
-                scanf("%i",t);
-                str2=str1.substr(f,t);
-                printf("%s",str2);
+                scanf("%i",&f);
+                printf("\n to: ");
+                scanf("%i",&t);
+                substring(str1,f-1,t);
                 break;
             }   
-    case 6:
+    case 6: //output reverse of string 
             {
-
-            }
-    case 7:
-            {
-
-            }
-    default:
+                printf("\nreverse of enterd string is: ");
+                //rev(str1);
+                printf("%s",rev(str1));
                 break;
+            }
+    case 7: //check for palindrome
+            {
+                pal(str1);
+                break;
+            }
+    case 8:
+            {
+                system("exit");
+            }
+    
+                
     }
 }
+
+const char *substring(char str1[20],int f,int t)
+{
+    int j=0;
+    char *str3[20];
+    for(int i=f;i<t;i++)
+        {
+            str3[j]=str1[i];
+            j++;
+        }  
+    str3[j+1]='\0';
+    for(int i=0;i<t;i++)
+        printf("%c",str3[i]);
+    printf("\n");
+}
+
+const char *rev(char str1[20])
+    {
+        char str3[20];
+        int end=strlen(str1)-1;
+        for(int start=0;start<=strlen(str1);start++)
+            {
+                str3[start]=str1[end];
+                end--;
+            }
+        
+        for(int i=0;i<strlen(str3);i++)
+            printf("%c",str3[i]);
+        printf("\n");
+    }
+
+const char *pal(char str1[20])
+    {
+        char str3[20];
+        int end=strlen(str1)-1,p=0;
+        for(int start=0;start<=strlen(str1);start++)
+            {
+                str3[start]=str1[end];
+                end--;
+            }
+        for(int i=0;i<=strlen(str1);i++)
+            {
+                if(str3[i]!=str1[i])
+                    {
+                        int p=1;
+                        break;
+                    }
+            }
+        if(strcmp(str1,str3)==0)
+            {
+                printf("entered string ( %s ) is a palindrome :)",str3);
+                printf("\n");
+            }
+        else
+            {
+                printf("entered string ( %s ) is not a palindrome :(",str1);
+                printf("\n");
+            }
+    }
