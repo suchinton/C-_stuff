@@ -80,7 +80,6 @@ int main()
     case 6: //output reverse of string 
             {
                 printf("\nreverse of enterd string is: ");
-                //rev(str1);
                 printf("%s",rev(str1));
                 break;
             }
