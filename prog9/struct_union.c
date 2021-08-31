@@ -16,7 +16,7 @@ union hospitalu
     char name[20];
     int room_no;
     float due_amount;
-}p2;
+}p2,p3;
 
 int main()
     {
@@ -71,5 +71,7 @@ int main()
         printf("\nRoom no.: %i",p2.room_no);
         printf("\nDue amount: %f",p2.due_amount);
         printf("\n\nSize of the P2 obj(struct): %i bytes",sizeof(p2));
+
+        printf("\nTrying: %d",p3);
 
     }
