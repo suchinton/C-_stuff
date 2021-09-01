@@ -5,6 +5,7 @@
 const char *substring(char str1[20],int f,int t);
 const char *rev(char str1[20]);
 const char *pal(char str1[20]);
+int count(char str1[20]);
 
 int main()
 {
@@ -115,8 +116,8 @@ const char *substring(char str1[20],int f,int t)
 const char *rev(char str1[20])
     {
         char str3[20];
-        int end=strlen(str1)-1;
-        for(int start=0;start<=strlen(str1);start++)
+        int end=count(str1)-1;
+        for(int start=0;start<=count(str1);start++)
             {
                 str3[start]=str1[end];
                 end--;
@@ -130,13 +131,13 @@ const char *rev(char str1[20])
 const char *pal(char str1[20])
     {
         char str3[20];
-        int end=strlen(str1)-1,p=0;
-        for(int start=0;start<=strlen(str1);start++)
+        int end=count(str1)-1,p=0;
+        for(int start=0;start<=count(str1);start++)
             {
                 str3[start]=str1[end];
                 end--;
             }
-        for(int i=0;i<=strlen(str1);i++)
+        for(int i=0;i<=count(str1);i++)
             {
                 if(str3[i]!=str1[i])
                     {
@@ -154,4 +155,12 @@ const char *pal(char str1[20])
                 printf("entered string ( %s ) is not a palindrome :(",str1);
                 printf("\n");
             }
+    }
+
+int count(char str1[20])
+    {
+        int count=0,i;
+        for(i=0; str1[i]!='\0'; ++i);
+        count=i;
+        return count;
     }
