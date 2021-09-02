@@ -2,6 +2,7 @@
     "files.associations": {
         "iostream": "cpp",
         "string": "c",
-        "string_view": "c"
+        "string_view": "c",
+        "ostream": "c"
     }
 }

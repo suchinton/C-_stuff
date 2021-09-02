@@ -1,6 +1,7 @@
 #include <iostream>
 #include <unistd.h>
 #include <string.h>
+#include <stdio.h>
 
 int no_entries=0;
 int old,young;
@@ -36,13 +37,15 @@ int main()
 
     char ans;
 
-    cout<<"\nSuchinton";
-    cout<<"\n========="<<endl;
+    cout<<"\nSuchinton (A2345920063)";
+    cout<<"\n======================="<<endl;
+    cout<<"\nProg to display youngest & oldest entries"<<endl;
 
     for(int i=0;i<=10;i++)
         {
             cout<<"\n\tEntery: "<<i+1;
-            cout<<"\nName: "; cin>>obj[i].name;
+            cout<<"\nName: "; 
+            cin>>obj[i].name;
             cout<<"\nAge: "; cin>>obj[i].age;
             cout<<"\ncontinue?(y/n) :";cin>>ans;
             if(ans=='y')
@@ -58,6 +61,9 @@ int main()
     sort();
 
     system("clear");
+
+    cout<<"\nAfter sorting(youngest to oldest)";
+    cout<<"\n================================="<<endl;
 
     for(int i=0;i<=no_entries;i++)
         {

@@ -1,0 +1,1 @@
+C prog for pointer arithmetic
