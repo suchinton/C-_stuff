@@ -1,0 +1,1 @@
+prog to perform liniear search on user defined arr

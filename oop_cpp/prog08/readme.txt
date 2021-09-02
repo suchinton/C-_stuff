@@ -1,0 +1,1 @@
+c++ prog to write inline function that obtains the youngest and eldest age of a person from a class person using arrays
