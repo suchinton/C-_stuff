@@ -1,1 +1,0 @@
-c++ prog to implement inline function (problem statement of your choice)

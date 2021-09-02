@@ -1,4 +1,0 @@
-c prog to 
-1)transverse array
-2)insert elements into the array
-3)delete elements

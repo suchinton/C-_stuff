@@ -1,1 +1,0 @@
-C prog to concat two strings without pre-def-fn

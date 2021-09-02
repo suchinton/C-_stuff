@@ -1,6 +1,0 @@
-c++ prog to Define a class Shape whose attributes are radius, length and width. 
-Calculate the perimeter and area of the rectangle and circle.
-
-Make use of public and private access specifiers.
-Define perimeter function of Circle and Rectangle outside the class and area 
-function of Circle & Rectangle inside the class.

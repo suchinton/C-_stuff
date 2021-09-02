@@ -1,1 +1,0 @@
-c prog to find factorial of num usinf recursion.

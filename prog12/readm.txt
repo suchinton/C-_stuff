@@ -1,1 +1,0 @@
-c prog to impliment pop and push fn in a stack
