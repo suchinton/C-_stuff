@@ -16,7 +16,7 @@ class person
 
 }obj[10],temp;
 
-int sort()
+int sort()              //for sorting the objects
 {
     int i,j;
     for (i=0; i < no_entries ; i++)
