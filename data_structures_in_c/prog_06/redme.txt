@@ -1,1 +1,1 @@
-c prog to impliment bubble sort;
+c prog to implement bubble sort;

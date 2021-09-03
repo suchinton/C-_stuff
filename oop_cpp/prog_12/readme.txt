@@ -1,1 +1,1 @@
-cpp prog to impliment array of objects
+cpp prog to implement array of objects

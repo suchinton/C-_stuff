@@ -21,7 +21,7 @@ int main()
     
     printf("\n| Suchinton (A2345920063)                              |");
     printf("\n|------------------------------------------------------|");
-    printf("\n| C Prog to impliment call by value (returns base^power)|");
+    printf("\n| C Prog to implement call by value (returns base^power)|");
     printf("\n|------------------------------------------------------|");
 
 

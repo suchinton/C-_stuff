@@ -16,7 +16,7 @@ int main()
 
     printf("\n| Suchinton (A2345920063)              |");
     printf("\n|--------------------------------------|");
-    printf("\n| C Prog to impliment String Operations|");
+    printf("\n| C Prog to implement String Operations|");
     printf("\n|--------------------------------------|");
     
     printf("\n\nEnter your string: ");          //Enter String

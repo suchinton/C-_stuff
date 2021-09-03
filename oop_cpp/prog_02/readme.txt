@@ -1,1 +1,1 @@
-C prog to impliment call by value
+C prog to implement call by value

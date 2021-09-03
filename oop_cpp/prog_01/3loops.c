@@ -11,7 +11,7 @@ int main()
 
         printf("\n| Suchinton (A2345920063)                                       |");
         printf("\n|---------------------------------------------------------------|");
-        printf("\n| C Prog to impliment three types of loops (for,while,do-while) |");
+        printf("\n| C Prog to implement three types of loops (for,while,do-while) |");
         printf("\n|---------------------------------------------------------------|");
         
         printf("\n\n1) Fibonacie series F(n)-[for loop]");

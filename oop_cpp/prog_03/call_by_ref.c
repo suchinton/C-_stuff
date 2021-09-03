@@ -20,7 +20,7 @@ int main()
     
     printf("\n| Suchinton (A2345920063)                              |");
     printf("\n|------------------------------------------------------|");
-    printf("\n| C Prog to impliment call by ref. (returns base^power)|");
+    printf("\n| C Prog to implement call by ref. (returns base^power)|");
     printf("\n|------------------------------------------------------|");
 
     printf("\n\nBase num ~> "); scanf("%d",&b);

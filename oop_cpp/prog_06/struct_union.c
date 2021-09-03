@@ -44,7 +44,7 @@ int main()
 
         printf("\n| Suchinton (A2345920063)                            |");
         printf("\n|----------------------------------------------------|");
-        printf("\n| C Prog to impliment Struct. & Union (Hospital Data)|");
+        printf("\n| C Prog to implement Struct. & Union (Hospital Data)|");
         printf("\n|----------------------------------------------------|");
 
         printf("\n\tHospital Data");

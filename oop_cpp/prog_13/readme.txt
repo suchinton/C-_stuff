@@ -1,1 +1,1 @@
-cpp prog to impliment friend functions
+cpp prog to implement friend functions

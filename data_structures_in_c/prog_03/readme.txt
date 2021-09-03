@@ -1,1 +1,1 @@
-Prog to impliment bubble sort in a user-defined array
+Prog to implement bubble sort in a user-defined array

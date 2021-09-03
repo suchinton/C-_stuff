@@ -1,1 +1,1 @@
-C prog to impliment concept of call by reference
+C prog to implement concept of call by reference
