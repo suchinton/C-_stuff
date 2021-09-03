@@ -1,0 +1,1 @@
+cpp prog to impliment array of objects

@@ -1,0 +1,1 @@
+cpp prog to impliment friend functions
