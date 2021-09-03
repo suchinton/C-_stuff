@@ -7,7 +7,12 @@ int main ()
 
     system ("clear");
 
+    printf("\n| Suchinton (A2345920063)                |");
+    printf("\n|----------------------------------------|");
+    printf("\n| C Prog to impliment pointer arithmetic |");
+    printf("\n|----------------------------------------|\n");
     printf("\nEnter the length of the array~> ");scanf("%d",&len);
+    
     int  arr[len];
     int  i, *ptr;
 

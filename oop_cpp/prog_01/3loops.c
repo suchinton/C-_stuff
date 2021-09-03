@@ -9,8 +9,11 @@ int main()
     {
         system("clear");
 
-        printf("\n\tTypes of Loops");
-        printf("\n\t----------------");
+        printf("\n| Suchinton (A2345920063)                                       |");
+        printf("\n|---------------------------------------------------------------|");
+        printf("\n| C Prog to impliment three types of loops (for,while,do-while) |");
+        printf("\n|---------------------------------------------------------------|");
+        
         printf("\n\n1) Fibonacie series F(n)-[for loop]");
         printf("\n2) Table of given no. n (0-10)-[while]");
         printf("\n3) Display line of length n-[do while]");

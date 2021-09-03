@@ -5,8 +5,10 @@ int main()
 {
     system("clear");
 
-    printf("\nTransversing Array");
-    printf("\n-------------------------");
+    printf("\n| Suchinton (A2345920063)              |");
+    printf("\n|--------------------------------------|");
+    printf("\n| C Prog to impliment Array Operations |");
+    printf("\n|--------------------------------------|\n");
 
     int len;
 

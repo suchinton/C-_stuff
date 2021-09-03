@@ -19,8 +19,11 @@ int main()
 
     system("clear");
     
-    printf("\nRaising number to power of n");
-    printf("\n============================");
+    printf("\n| Suchinton (A2345920063)                              |");
+    printf("\n|------------------------------------------------------|");
+    printf("\n| C Prog to impliment call by value (returns base^power)|");
+    printf("\n|------------------------------------------------------|");
+
 
     printf("\n\nBase num ~> "); scanf("%d",&b);
 
