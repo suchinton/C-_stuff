@@ -17,9 +17,10 @@ int main()
 
     system("clear");
 
-    cout<<"Suchinton";
-    cout<<"\nA2345920063";
-    cout<<"\n=============";
+    cout<<"\n| Suchinton (A2345920063)                                  |";
+    cout<<"\n|----------------------------------------------------------|";
+    cout<<"\n|c++ prog to implement inline function (returns n^3 & ++n) |";
+    cout<<"\n|----------------------------------------------------------|"<<endl;
 
     cout<<"\nEnter your number: ";cin>>a;
     cout << "\nThe cube of given number is: " << cube(a); 

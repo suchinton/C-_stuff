@@ -5,7 +5,12 @@ using namespace std;
 
 int main()
 {
-    system("clear");
-    cout<<"Hello World"<<endl;
-    return 0;
+    system ("clear");
+
+    cout<<"\n| Suchinton (A2345920063)       |";
+    cout<<"\n|-------------------------------|";
+    cout<<"\n| Basic C++ prog...             |";
+    cout<<"\n|-------------------------------|"<<endl;
+
+    cout<<"\n\n\t Hello World\n"<<endl;
 }

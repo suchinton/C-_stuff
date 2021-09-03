@@ -47,8 +47,11 @@ int main()
 
     system("clear");
 
-    cout<<"\nSuchinton Chakravarty";
-    cout<<"\nA2345920063";
+    cout<<"\n| Suchinton (A2345920063)                                  |";
+    cout<<"\n|----------------------------------------------------------|";
+    cout<<"\n|          c++ prog to implement classes                   |";
+    cout<<"\n|(returns area and para./circum. based on user input)      |";
+    cout<<"\n|----------------------------------------------------------|"<<endl;
 
     cout<<"\n\nEnter choice";
     cout<<"\n============";

@@ -14,6 +14,11 @@ int main()
     int n,f,t;
     char str1[20],str2[20];
 
+    printf("\n| Suchinton (A2345920063)              |");
+    printf("\n|--------------------------------------|");
+    printf("\n| C Prog to impliment String Operations|");
+    printf("\n|--------------------------------------|");
+    
     printf("\n\nEnter your string: ");          //Enter String
     scanf("%s",&str1); 
 
