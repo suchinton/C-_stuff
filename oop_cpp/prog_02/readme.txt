@@ -1,0 +1,1 @@
+C Prog to implement call by value (returns base^power)
