@@ -1,76 +1,82 @@
-#include<iostream>
-#include<math.h>
+#include <stdio.h>
+#include <math.h>
 #include <unistd.h>
-
-using namespace std;
 
 int eve_odd(int);
 int p_np(int);
 int fact(int);
 int table(int);
-int pal(long int);
+int pal(int);
 int arm(int);
 int fibo(int);
+int power(int base,int power);
 
 int main()
     {
         system("clear");    //used instead of clrscr();
-        AGAIN: cout<<"\n\t  Pick an Option";            //menu
+
+        printf("\n| Suchinton (A2345920063)                                       |");
+        printf("\n|---------------------------------------------------------------|");
+        printf("\n| C Prog to implement three types of loops (for,while,do-while) |");
+        printf("\n|---------------------------------------------------------------|");
+        
+        AGAIN: printf("\n\t  Pick an Option");            //menu
+
 		long int n;
-        int a=0; char ch;                           
-        cout<<"\n\t=================="; 
-        cout<<"\n\n1) Even or odd";
-        cout<<"\n2) Prime or not";
-        cout<<"\n3) Factorial";
-        cout<<"\n4) Table";
-        cout<<"\n5) Palindrome";
-        cout<<"\n6) Armstrong no";
-        cout<<"\n7) fibonacci series"; 
-        cout<<"\n8) screen shot";
-        cout<<"\n9) clear screen";  
-        cout<<"\n10) Exit";
-        cout<<"\n\n\tchoose your option: "; cin>>a;       
+        int a; char ch;           
+        printf("\n\t=================="); 
+        printf("\n\n1) Even or odd");
+        printf("\n2) Prime or not");
+        printf("\n3) Factorial");
+        printf("\n4) Table");
+        printf("\n5) Palindrome");
+        printf("\n6) Armstrong no");
+        printf("\n7) fibonacci series"); 
+        printf("\n8) screen shot");
+        printf("\n9) clear screen");
+        printf("\n10) Exit");
+        printf("\n\n\tchoose your option: "); scanf("%d",&a);       
         switch(a)
             {
                 case 1:
                     {
-                        cout<<"\nenter your number: "; cin>>n;
+                        printf("\nenter your number: "); scanf("%d",&n);
                         eve_odd(n);
                         break;
                     }
                 case 2:
                     {
-                        cout<<"\nenter your number: "; cin>>n;
+                        printf("\nenter your number: "); scanf("%d",&n);
                         p_np(n);
                         break;
                     }   
                 case 3:
                     {
-                        cout<<"\nenter your number: "; cin>>n;
+                        printf("\nenter your number: "); scanf("%d",&n);
                         fact(n);
                         break;
                     }
                 case 4:
                     {
-                        cout<<"\nenter your number: "; cin>>n;
+                        printf("\nenter your number: "); scanf("%d",&n);
                         table(n);
                         break;
                     }
                 case 5:
                     {
-                        cout<<"\nenter your number: "; cin>>n;
+                        printf("\nenter your number: "); scanf("%d",&n);
                         pal(n);
                         break;
                     }
                 case 6:
                     {
-                        cout<<"\nenter your number: "; cin>>n;
+                        printf("\nenter your number: "); scanf("%d",&n);
                         arm(n);
                         break;
                     }
                 case 7:
                     {
-                        cout<<"\nenter your number: "; cin>>n;
+                        printf("\nenter your number: "); scanf("%d",&n);
                         fibo(n);
                         break;
                     }
@@ -87,7 +93,8 @@ int main()
                     }
                 default:
                     {
-                        exit(0);
+                        system("exit");
+                        break;
                     }
             }
         sleep(5);           //sleeps for 3 second
@@ -98,9 +105,9 @@ int main()
 int eve_odd(int n)          //fn to check if a number is odd or even
     {
         if (n%2==0)
-            cout<<"\n"<<n<<" is an even number"<<endl;
+            printf("\n%d is an even number",n);
         else
-            cout<<"\n"<<n<<" is an odd number"<<endl;
+            printf("\n%d is an odd number",n);
     }
 
 int p_np(int n)             //fn to check for prime no.
@@ -112,9 +119,9 @@ int p_np(int n)             //fn to check for prime no.
                     pn=pn+i;
             }
         if(pn==n)
-            cout<<"\n"<<n<<" is a prime no."<<endl;
+            printf("\n%d is a prime no.",n);
         else
-            cout<<"\n"<<n<<" is not a prime no."<<endl;
+            printf("\n%d is not a prime no.",n);
     }
 
 int fact(int n)             //fn to find the factorial of a no.
@@ -125,20 +132,20 @@ int fact(int n)             //fn to find the factorial of a no.
             {
                 f=f*n;
             }
-        cout<<"\nfactorial of "<<no<<" is: "<<f<<endl;
+        printf("\nfactorial of %d is: %d",no,f);
     }
 
 int table(int n)            //fn to display the table of a no. (1 to 10)
     {
-        cout<<"\nTable of "<<n<<" from 0 to 10"<<endl;
+        printf("\nTable of %d from 0 to 10",n);
         for(int i=0;i<=10;i++)
             {
-                cout<<"\n"<<n<<"X"<<i<<"= "<<n*i;
+                printf("\n%d X %d = %d",n,i,n*i);
             }
-        cout<<endl;
+        printf("\n");
     }
 
-int pal(long int n)              //fn to check for a palindrome
+int pal(int n)              //fn to check for a palindrome
     {
         long int rev=0,last,pali=n;
         while(n>0)
@@ -148,9 +155,9 @@ int pal(long int n)              //fn to check for a palindrome
                 n=n/10;
             }
         if(rev==pali)
-            cout<<"\n"<<pali<<" is a palindrome"<<endl;
+            printf("\n%d is a palindrome",pali);
         else
-            cout<<"\n"<<pali<<" is not a palindrome"<<endl;
+            printf("\n%d is not a palindrome",pali);
     }
 
 int arm(int n)              //fn to check for armstron number 
@@ -168,25 +175,33 @@ int arm(int n)              //fn to check for armstron number
             {
                 last=copy%10;
                 copy=copy/10;
-                arms=arms+pow(last,len);
+                arms=arms+power(last,len);
             }
         if(arms==n)
-            cout<<"\n"<<n<<" is an armstrong no."<<endl;
+            printf("\n%d is an armstrong no.",n);
         else 
-            cout<<"\n"<<n<<" is not an armstrong no."<<endl;
-        //cbieub
+            printf("\n%d is not an armstrong no.",n);
     }
 
 int fibo(int n)             //fn to check fibonachi series
     {
         int n1=0, n2=1, nextno=n1+n2;
-        cout<<"\nF("<<n<<")= "<<n1<<", "<<n2;
+        printf("\nF(%d)= %d,%d",n,n1,n2);
         for(int i=3; i<=n+1; ++i)
             {
-                    cout<<", "<<nextno;
+                printf(", %d",nextno);
                 n1=n2;
                 n2=nextno;
                 nextno=n1+n2;
             }
-        cout<<endl;
+        printf("\n");
     }
+
+int power(int base,int power)
+{
+    int b=base;
+    for(int i=1;i<power;i++)
+        base=base*b;
+
+    return base;
+}
