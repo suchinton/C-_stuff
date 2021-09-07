@@ -7,6 +7,12 @@ int main()
     {
         int r1,r2,c1,c2,sum,i,j;
         system("clear");
+
+        printf("\n| Suchinton (A2345920063)                             |");
+        printf("\n|-----------------------------------------------------|");
+        printf("\n| C Prog to Prog to find the product of two matrices  |");
+        printf("\n|-----------------------------------------------------|");
+
         AGAIN:
         cout<<"\n   matrix multipyer";
         cout<<"\n   ****************";

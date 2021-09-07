@@ -6,6 +6,12 @@ int main()
     {
         system("clear");
 
+
+        printf("\n| Suchinton (A2345920063)                             |");
+        printf("\n|-----------------------------------------------------|");
+        printf("\n| C Prog to Prog to find the product of two matrices  |");
+        printf("\n|-----------------------------------------------------|");
+        
         printf("\nSorting Elements (Bubble)");
         printf("\n-------------------------");
 
