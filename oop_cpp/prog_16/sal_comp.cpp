@@ -15,6 +15,7 @@ class sal_slip
 
 }obj[10],temp;
 
+
 inline int sort()              //for sorting the objects
 {
     int i,j;
