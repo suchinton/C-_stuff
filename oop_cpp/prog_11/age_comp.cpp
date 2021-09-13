@@ -3,7 +3,6 @@
 #include <string.h>
 
 int no_entries=0;
-int old,young;
 
 using namespace std;
 
