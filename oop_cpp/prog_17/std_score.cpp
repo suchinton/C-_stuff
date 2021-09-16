@@ -30,7 +30,7 @@ class learner
         void disp_n_e(void)
         {
             cout<<"\n\nName: "<<full_name;
-            cout<<"\nEnrollment no. : "<<enr_no;
+            cout<<"\nEnrollment no. : "<<enr_no<<endl;
         }
         void sort_marks(void);
         void min_m(void);
@@ -55,7 +55,7 @@ void learner::get_data(void)        //fn to accept data
 {
     cout<<"\nEnter full name (use _ for space) : ";
     cin>>full_name;
-    cout<<"\nEnrollment no. : ";    
+    cout<<"Enrollment no. : ";    
     cin>>enr_no;
     cout<<"\n\nEnter marks (out of 100):"<<endl;
     for(int i=0; i<5 ;i++)
@@ -73,7 +73,7 @@ void display(void)          //display everything
     {
         stud[i].disp_n_e();
         for(int j=0; j<5; j++)
-            cout<<i+1<<") "<<stud[i].subs[j].sub_name<<" ~> "<<stud[i].subs[j].m<<endl;
+            cout<<j+1<<") "<<stud[i].subs[j].sub_name<<" ~> "<<stud[i].subs[j].m<<endl;
         stud[i].min_m();
         stud[i].max_m();
         stud[i].total_m();
@@ -131,8 +131,9 @@ void learner::max_m(void)       //display max score
 
 void learner::total_m(void)     //disp total score
 {
-    for (int i=0; i<=5 ;i++)
-        t_m = t_m + subs[i].m;
+    int t_m=0;
+    for (int i=0; i<5 ;i++)
+        t_m += subs[i].m;
     cout<<"\nTotal mark is : "<<t_m<<"/"<<5*total_marks; 
 }
 
