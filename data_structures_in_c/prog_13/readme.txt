@@ -1,1 +1,1 @@
-c prog to implement linked lists
+c prog to implement circular queues

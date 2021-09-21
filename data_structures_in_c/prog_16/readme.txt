@@ -1,0 +1,1 @@
+c prog to traverse a linked list
