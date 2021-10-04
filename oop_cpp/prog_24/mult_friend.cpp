@@ -10,7 +10,6 @@ void add(one, two);
 
 class one
 {
-    private:
     public:
         int A;
         friend void add(one,two);
@@ -18,7 +17,6 @@ class one
 
 class two
 {
-    private:
     public:
         int B;
         friend void add(one,two);
@@ -41,7 +39,7 @@ int main()
     one A;
     two B;
 
-    cout<<"A = ";     cin>>A.A;
+    cout<<"\nA = ";     cin>>A.A;
     cout<<"B = ";     cin>>B.B;  
     add(A,B);
 }
