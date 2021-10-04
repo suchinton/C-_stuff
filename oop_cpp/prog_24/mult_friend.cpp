@@ -32,6 +32,11 @@ void add (one A, two B)
 int main()
 {
     system ("clear");
+    
+    cout<<"\n| Suchinton (A2345920063)            |";
+    cout<<"\n|------------------------------------|";
+    cout<<"\n| Prog. to implement  mult friend fn |";
+    cout<<"\n|------------------------------------|"<<endl;   
 
     one A;
     two B;

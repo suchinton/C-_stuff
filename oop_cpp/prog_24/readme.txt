@@ -1,1 +1,1 @@
-cpp prog to impliment mult friend fn.
+cpp prog to implement mult friend fn.
