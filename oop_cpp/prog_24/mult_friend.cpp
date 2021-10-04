@@ -40,6 +40,6 @@ int main()
     two B;
 
     cout<<"\nA = ";     cin>>A.A;
-    cout<<"B = ";     cin>>B.B;  
+    cout<<"B = ";       cin>>B.B;  
     add(A,B);
 }
