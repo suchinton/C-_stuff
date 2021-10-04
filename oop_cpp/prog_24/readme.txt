@@ -1,0 +1,1 @@
+cpp prog to impliment mult friend fn.
