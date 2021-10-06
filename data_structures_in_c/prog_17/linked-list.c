@@ -193,6 +193,7 @@ int main()
                 deletePosition();
                 break;
             case 8:
+                printf("\nTHANK YOU!!\n");
                 exit(1);
                 break;
             default:
