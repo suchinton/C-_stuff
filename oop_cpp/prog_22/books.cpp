@@ -74,7 +74,7 @@ int main()
     cout<<"\n2) Book";
     cout<<"\n3) Exit";
 
-    AGAIN:cout<<"\n\nChoice : ";  cin>>a;
+    AGAIN:cout<<"\n\nChoice : "; cin>>a;
 
     switch(a)
     {
