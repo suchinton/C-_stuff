@@ -79,14 +79,14 @@ void new_entry(void)
     {
         cout<<"\n\tEntery: "<<i+1;
         cout<<"\nBook No.: ";           cin>>Books[i].book_no;
-        cout<<"\nBook Title (Use '_' in place of space): ";         cin>>Books[i].name;
-        cout<<"\nNo. of pages: ";       cin>>Books[i].pages;
-        cout<<"\nPrice: ";              cin>>Books[i].price;
-        cout<<"\ncontinue?(y/n) :";     cin>>ans;
+        cout<<"Book Title (Use '_' in place of space): ";         cin>>Books[i].name;
+        cout<<"No. of pages: ";       cin>>Books[i].pages;
+        cout<<"Price: ";              cin>>Books[i].price;
+        cout<<"continue?(y/n) :";     cin>>ans;
         if(ans=='y')
             {
                 no_entries++;
-                system("clear");
+                //system("clear");
                 continue;
             }
         else

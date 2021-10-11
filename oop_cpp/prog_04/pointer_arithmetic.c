@@ -23,7 +23,7 @@ int main ()
         }
     ptr = arr;
 	
-    system ("clear");
+    //system ("clear");
 
     for (i=0; i<len; i++) 
     { 

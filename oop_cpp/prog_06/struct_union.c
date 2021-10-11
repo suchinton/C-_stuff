@@ -62,7 +62,7 @@ int main()
         enterp3();
         printf("\n---------------------------------------------------------"); 
 
-        system ("clear");
+        //system ("clear");
         
         printf("\n\tHospital Data");            //display deatials of objs
         printf("\n\t+++++++++++++");
@@ -86,9 +86,9 @@ int main()
 void enterp1()
 {
         printf("\nEnter patient no.: ");        scanf("%i",&p1.Pno);
-        printf("\nEnter patient name: ");       scanf("%s",&p1.name);
-        printf("\nEnter Room no.: ");           scanf("%i",&p1.room_no);
-        printf("\nEnter due amount: ");         scanf("%f",&p1.due_amount);
+        printf("Enter patient name: ");       scanf("%s",&p1.name);
+        printf("Enter Room no.: ");           scanf("%i",&p1.room_no);
+        printf("Enter due amount: ");         scanf("%f",&p1.due_amount);
 }
 
 void showp1()
@@ -104,9 +104,9 @@ void showp1()
 void enterp2()
 {
     printf("\nEnter patient no.: ");        scanf("%i",&p2.Pno);
-    printf("\nEnter patient name: ");       scanf("%s",&p2.name);
-    printf("\nEnter Room no.: ");           scanf("%d",&p2.room_no);
-    printf("\nEnter due amount: ");         scanf("%f",&p2.due_amount);
+    printf("Enter patient name: ");       scanf("%s",&p2.name);
+    printf("Enter Room no.: ");           scanf("%d",&p2.room_no);
+    printf("Enter due amount: ");         scanf("%f",&p2.due_amount);
 }
 
 void showp2()
@@ -122,9 +122,9 @@ void showp2()
 void enterp3()
 {
     printf("\nEnter patient no.: ");    scanf("%i",&p3.Pno);
-    printf("\nEnter patient name: ");   scanf("%s",&p3.name);
-    printf("\nEnter Room no.: ");       scanf("%i",&p3.room_no);
-    printf("\nEnter due amount: ");     scanf("%f",&p3.due_amount);
+    printf("Enter patient name: ");   scanf("%s",&p3.name);
+    printf("Enter Room no.: ");       scanf("%i",&p3.room_no);
+    printf("Enter due amount: ");     scanf("%f",&p3.due_amount);
 }
 
 void showp3()

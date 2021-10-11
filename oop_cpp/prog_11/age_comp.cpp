@@ -42,15 +42,15 @@ int main()
 
     for(int i=0;i<=10;i++)
         {
-            cout<<"\n\tEntery: "<<i+1;
+            cout<<"\n\tEntry: "<<i+1;
             cout<<"\nName: "; 
             cin>>obj[i].name;
-            cout<<"\nAge: "; cin>>obj[i].age;
-            cout<<"\ncontinue?(y/n) :";cin>>ans;
+            cout<<"Age: "; cin>>obj[i].age;
+            cout<<"continue?(y/n) :";cin>>ans;
             if(ans=='y')
                 {
                     no_entries++;
-                    system("clear");
+                    //system("clear");
                     continue;
                 }
             else
@@ -59,7 +59,7 @@ int main()
     
     sort();
 
-    system("clear");
+    //system("clear");
 
     cout<<"\nAfter sorting(youngest to oldest)";
     cout<<"\n---------------------------------"<<endl;
