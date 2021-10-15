@@ -1,0 +1,1 @@
+To implement ambiguity resolution in multiple inheritance
