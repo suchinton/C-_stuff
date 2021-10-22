@@ -24,9 +24,9 @@ class box
 
         void show_data()
         {
-            cout << " Length = " << length
-                 << "\n Breadth = " << *breadth
-                 << "\n Height = " << height
+            cout << "Length = " << length
+                 << "\nBreadth = " << *breadth
+                 << "\nHeight = " << height
                  << endl;
         }
 
@@ -56,7 +56,7 @@ int main()
     cout<<"\n|----------------------------------------|\n"<<endl;
 
     cout<<"\nDimensions of box 1 : \n";
-    first.set_dimension(12, 14, 16);
+    first.set_dimension(33, 2, 7);
     first.show_data();
 
     box second = first;

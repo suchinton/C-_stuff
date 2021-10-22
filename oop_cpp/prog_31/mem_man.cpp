@@ -16,7 +16,7 @@ int main()
     cin>>count;
 
     int *roll_no = new int[count];
-    char *name_s = new char[count];
+    char *name_s = new char[count]; 
     float *marks = new float[count];
     
     char *arr[30];
