@@ -1,0 +1,1 @@
+Write a prog. to impliment inheritance

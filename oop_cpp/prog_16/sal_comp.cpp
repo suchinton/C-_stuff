@@ -52,7 +52,7 @@ int main()
             if(ans=='y')
                 {
                     no_entries++;
-                    system("clear");
+                    //system("clear");
                     continue;
                 }
             else
@@ -61,7 +61,7 @@ int main()
     
     sort();
 
-    system("clear");
+    //system("clear");
 
     cout<<"\nAfter sorting using salary(lowest to maximum)"<<endl;
 

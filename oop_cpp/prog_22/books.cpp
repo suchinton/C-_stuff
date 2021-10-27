@@ -95,7 +95,7 @@ int main()
                         else break;
                     }
                 
-                system ("clear");
+                //system ("clear");
 
                 for(int i=0; i<=no_entries; i++)
                     {
@@ -122,7 +122,7 @@ int main()
                         else break;
                     }
                 
-                system ("clear");
+                //system ("clear");
 
                 for(int i=0; i<=no_entries; i++)
                     {

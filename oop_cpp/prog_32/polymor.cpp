@@ -72,9 +72,9 @@ int main()
 
     system("clear");
 
-    cout<<"\n| Suchinton (A2345920063)  45000.90                         |";
+    cout<<"\n| Suchinton (A2345920063)                           |";
     cout<<"\n|---------------------------------------------------|";
-    cout<<"\n| Do implement the concept of Run Time polymorphism |";
+    cout<<"\n| WAP to implement the concept of Run Time polymorphism |";
     cout<<"\n|---------------------------------------------------|\n"<<endl;
 
     laptop *l = new dell();

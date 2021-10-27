@@ -1,5 +1,6 @@
 #include <iostream>
 #include <unistd.h>
+#include "../../colour.h"
 
 using namespace std;
 
@@ -29,17 +30,18 @@ int main()
     cout<<"\n| cpp prog to implement function overloading concept|";
     cout<<"\n|---------------------------------------------------|"<<endl;
 
-    cout<<"\n1) Circle";
-    cout<<"\n2) Rectangle";
-    cout<<"\n3) Triangle";
+    cout<<RED<<"\n1) Circle";
+    cout<<YELLOW<<"\n2) Rectangle";
+    cout<<MAGENTA<<"\n3) Triangle";
     
-    cout<<"\n\nOption : ";
+    cout<<RESET<<"\n\nOption : ";
     cin>>n;
 
     switch(n)
     {
         case 1:
             int r;
+            cout<<RED;
             cout<<"\nCircle";
             cout<<"\n------"<<endl;
             cout<<"\nRadius : ";
@@ -48,6 +50,7 @@ int main()
             break;
         case 2:
             int l, w;
+            cout<<YELLOW;
             cout<<"\nRectangle";
             cout<<"\n---------"<<endl;
             cout<<"\nLength : ";
@@ -57,6 +60,7 @@ int main()
             cout<<"\nArea of given rectangle : "<<Area(l,w);
             break;
         case 3:
+            cout<<MAGENTA;
             float b,h,area;
             cout<<"\nTriangle";
             cout<<"\n--------"<<endl;

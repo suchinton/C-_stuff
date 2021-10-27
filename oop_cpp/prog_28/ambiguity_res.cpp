@@ -1,5 +1,4 @@
 #include <iostream>
-#include <unistd.h>
 #include <string.h>
 
 using namespace std;
@@ -11,7 +10,7 @@ class Person
 
         void get_name(void)  
         { 
-            cout << "\nENter name : ";
+            cout << "\nEnter name : ";
             scanf("%s",name);   
         }
 };
@@ -77,7 +76,7 @@ int main()
             obj.Faculty::get_name();
             obj.Faculty::get_id();
             
-            system ("clear");
+            //system ("clear");
             obj.Faculty::show();
 
             break;
@@ -86,7 +85,7 @@ int main()
             obj.Student::get_name();
             obj.Student::get_id();
             
-            system ("clear");
+            //system ("clear");
             obj.Student::show();
             break;
 

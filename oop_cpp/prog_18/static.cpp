@@ -11,7 +11,7 @@ class dates
     public:
         static void print()
         {
-            cout<<"today: "<<today<<"\ttomorrow: "<<tmrw;
+            cout<<"today: "<<today<<"\ntomorrow: "<<tmrw;
         }
 }ob;
 
@@ -20,5 +20,12 @@ char dates::tmrw[11]={"16/09/2021"};
 
 int main()
 {
+    system("clear");
+
+    cout<<"\n| Suchinton          (A2345920063)                     |";
+    cout<<"\n|------------------------------------------------------|";
+    cout<<"\n| Prog to display lowest & highest salaries of workers |";
+    cout<<"\n|------------------------------------------------------|"<<endl;
+
     dates::print();
 }

@@ -25,6 +25,13 @@ public:
 
 int main()
 {
+    system("clear");
+
+    cout<<"\n| Suchinton (A2345920063)    |";
+    cout<<"\n|----------------------------|";
+    cout<<"\n| WAP impliment inheritance. |";
+    cout<<"\n|----------------------------|"<<endl;
+
     cout<<"\nBase:";
     cout<<"\nb="<<c1.b;
     c1.show();

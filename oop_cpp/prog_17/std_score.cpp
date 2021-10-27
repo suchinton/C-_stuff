@@ -139,9 +139,14 @@ void learner::total_m(void)     //disp total score
 
 int main()
 {
-    system ("clear");
+    system("clear");
 
     char ans;
+
+    cout<<"\n| Suchinton          (A2345920063)                     |";
+    cout<<"\n|------------------------------------------------------|";
+    cout<<"\n| Prog to display lowest & highest salaries of workers |";
+    cout<<"\n|------------------------------------------------------|"<<endl;
 
     cout<<"\n\nStudent Details";
     cout<<"\n===============";
@@ -156,7 +161,7 @@ int main()
             if(ans=='y')
                 {
                     no_entries++;
-                    system("clear");
+                    //system("clear");
                     continue;
                 }
             else
