@@ -63,7 +63,7 @@ int main()
     insertLeft(root->left, 4);
     insertRight(root->left, 5);
 
-    printf(RED"Inorder traversal \n");
+    printf(YELLOW"Inorder traversal \n");
     inorderTraversal(root);
 
     printf(GREEN"\nPostorder traversal \n");
