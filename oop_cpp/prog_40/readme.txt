@@ -1,0 +1,1 @@
+Another program to implement is Template Class using real life problem statement.

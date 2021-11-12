@@ -61,7 +61,7 @@ int main()
     {
         first();
     }
-    catch(int)
+    catch(int a)
     {
         cout<<"main :: catch int exception\n";
     }
