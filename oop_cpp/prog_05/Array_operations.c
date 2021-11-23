@@ -15,11 +15,11 @@ int main()
     printf("\nEnter no. of elements to be entered ");
     scanf("%i", &len);
 
-    int A[len], pos, new_el, ans = 'y';
+    int A[len+1], pos, new_el, ans = 'y';
 
     for (int i = 0; i < len; i++)
     {
-        printf("\nElement %d is: ", i + 1);
+        printf("Element %d is: ", i + 1);
         scanf("%i", &A[i]);
     }
 
@@ -49,7 +49,7 @@ int main()
 
     case 2:
     {
-        len += 1; //for insertion of element
+        //len += 1; //for insertion of element
 
         printf("\nElement to be enetered: ");
         scanf("%i", &new_el);

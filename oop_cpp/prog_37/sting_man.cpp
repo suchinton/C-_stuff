@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    string name1, name2; 
+    string name1, name2;
     char title[5];
     
     system("clear");

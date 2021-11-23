@@ -1,15 +1,40 @@
 #include <iostream>
-#include <unistd.h>
+#include <string>
 
 using namespace std;
 
-class students
+class rectangle
 {
-    int roll_no;
-    char name[20];
-    char class_sec[20];
+    int length, breadth;
 
     public:
-        friend void get_details(void);
+    rectangle(int length, int breadth):length(length),breadth(breadth)
+    {}
+    friend void calcArea(rectangle s); 
+ 
 };
 
+void calcArea(rectangle s)
+{
+    cout<<"Area = "<<s.length * s.breadth;
+}
+int main()
+{
+    system ("clear");
+    
+    cout<<"\n| Suchinton (A2345920063)             |";
+    cout<<"\n|-------------------------------------|";
+    cout<<"\n| Prog. to implement friend functions |";
+    cout<<"\n|-------------------------------------|"<<endl;  
+
+    int len, wid;
+
+    cout<<"\nLength of rectangele   : ";
+    cin>>len;
+    cout<<"width of rectangle     : ";
+    cin>>wid;
+    
+    rectangle s(len,wid);
+    calcArea(s);
+    return 0;
+}
