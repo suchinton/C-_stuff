@@ -23,11 +23,10 @@ int main()
 
         for(int i=0;i<len;i++)
             {
-                printf("\n\nElement %d is: ",i+1);
+                printf("Element %d is: ",i+1);
                 scanf("%d",&A[i]);
             }
 
-        system("clear");
         printf("\n\nBefore Sorting: \n");
         for(int i=0;i<len;i++)
             printf("%d ",A[i]);

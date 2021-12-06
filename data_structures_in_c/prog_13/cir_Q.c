@@ -88,7 +88,7 @@ int main()
 
     printf("\n| Suchinton (A2345920063)                    |");
     printf("\n|--------------------------------------------|");
-    printf("\n| C Prog to convert infix exp to postfix exp |");
+    printf("\n| C Prog to implement Circular Queues        |");
     printf("\n|--------------------------------------------|\n");
 
 	do
@@ -117,7 +117,7 @@ int main()
 				break;
 			case 4:
 				break;
-				default:
+			default:
 				printf("Wrong choice\n");
 		}
 	}while(choice!=4);

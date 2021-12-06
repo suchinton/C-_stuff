@@ -56,6 +56,13 @@ void first()
 
 int main()
 {
+    system("clear");
+
+    cout<<"\n| Suchinton (A2345920063)          |";
+    cout<<"\n|----------------------------------|";
+    cout<<"\n| To implement Exception Handling |";
+    cout<<"\n|----------------------------------|"<<endl;
+
     cout<<"main :: begin\n";
     try
     {

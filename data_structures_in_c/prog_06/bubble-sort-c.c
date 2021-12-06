@@ -3,7 +3,9 @@
 
 int main()
     {
-        system("clear");
+      system("clear");
+      printf("\n| Suchinton (A2345920063)            |");
+      printf("\n|------------------------------------|\n\n");
 
         printf("\nSorting Elements (Bubble)");
         printf("\n-------------------------");
@@ -20,10 +22,10 @@ int main()
                 scanf("%d",&A[i]);
             }
 
-        system("clear");
+        //system("clear");
         printf("\n\nBefore Sorting: \n");
         for(int i=0;i<len;i++)
-            printf("%d",A[i]);
+            printf("%d ",A[i]);
 
         int i,j;
         for(i=0;i<len-1;i++)
@@ -39,11 +41,11 @@ int main()
 
         printf("\n\nAfter sorting\n");
         for(int i=0;i<len;i++)
-            printf("%d",A[i]);
+            printf("%d ",A[i]);
         
         int ans;
         printf("\n\nwould you like to take a screenshot of the output?(Y/n): ");
-        scanf("%d",&ans);
+        scanf("%d ",&ans);
         if(ans=='y')
             system("gnome-screenshot");
     }

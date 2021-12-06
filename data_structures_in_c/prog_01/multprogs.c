@@ -13,7 +13,7 @@ int power(int base,int power);
 
 int main()
     {
-        system("clear");    //used instead of clrscr();
+        system("clear");   
 
         printf("\n| Suchinton (A2345920063)                                       |");
         printf("\n|---------------------------------------------------------------|");

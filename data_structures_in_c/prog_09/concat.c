@@ -1,16 +1,21 @@
 #include <stdio.h>
 #include <unistd.h>
+#include <string.h>
 
 int main()
 {
-    system ("clear");
+    system("clear");
+
+    printf("\n|------------------------------------|");
+    printf("\n| Suchinton (A2345920063)            |");
+    printf("\n|------------------------------------|\n\n");
 
     int len1=0,len2=0;
 
     printf("\nConcatenation of two strings");
     printf("\n============================");
 
-    char str1[20];
+    char str1[40];
 
     printf("\nEnter string 1 ~> ");
     scanf("%s",str1);

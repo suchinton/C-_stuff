@@ -11,12 +11,16 @@ int main()
 {
     system("clear");
 
+    printf("\n|------------------------------------|");
+    printf("\n| Suchinton (A2345920063)            |");
+    printf("\n|------------------------------------|\n\n");
+
     top=-1;
     printf("\n Size of STACK is 100 ");
 
     printf("\n\t STACK OPERATIONS USING ARRAY");
     printf("\n\t ============================");
-    printf("\n\t 1)PUSH\n\t 2)POP\n\t 3)DISPLAY\n\t 4)EXIT");
+    printf("\n\n\t 1)PUSH\n\t 2)POP\n\t 3)DISPLAY\n\t 4)EXIT");
 
     do
     {

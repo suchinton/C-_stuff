@@ -1,14 +1,15 @@
 #include <iostream>
 #include <colour.h>
+#include <vector>
 #include <string>
 #include <string.h>
 
 using namespace std;
 
-int main()  
-{   
+int main()
+{
     int count;
-    
+
     system("clear");
 
     cout<<"\n| Suchinton (A2345920063)              |";
@@ -20,19 +21,20 @@ int main()
     cin>>count;
 
     int *roll_no = new int[count];
-    string *name[count] //= new string[count];
-    char name_s[20]; 
-    float *marks = new float[count];
     
+    char name_s[20];
+    float *marks = new float[count];
+
     char *arr[30];
     for (int i=0; i<count; i++)
     {
-        cout<<"\nEnter the student "<<i+1<<" roll no. : ";     
-        cin>>roll_no[i];   
+        cout<<"\nEnter the student "<<i+1<<" roll no. : ";
+        cin>>roll_no[i];
         cout<<"Enter student name (Initial) : ";
-        scanf("%s",name_s); 
-        name[i].insert(0,name_s);
-        //cin>>name_s[i];
+        scanf("%s",name_s);
+        
+        
+        
         AGAIN:cout<<"marks : ";
         try
         {
@@ -66,10 +68,9 @@ int main()
     for(int i=0 ; i<count ; i++)
     {
         cout<<"\nRoll no. : "<<roll_no[i];
-        cout<<"\nName     : "<<name[i];
+        cout<<"\nName     : "<<name_s[i];
         cout<<"\nMarks    : "<<marks[i];
-    }  
+    }
     delete roll_no;
-    delete name;
-    delete marks; 
-}  
+    delete marks;
+}

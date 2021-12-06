@@ -8,8 +8,10 @@ int binarySearch(int A[],int l,int r,int search);
  int main()
    {
       system("clear");
+      printf("\n| Suchinton (A2345920063)            |");
+      printf("\n|------------------------------------|\n\n");
 
-      printf("\n\tBinary_search-[enter sorted elements]");
+      printf("\n\tBinary_search-[enter sorted elements");
       printf("\n\t-------------------------------------");
 
       int len, search,result;
@@ -24,7 +26,7 @@ int binarySearch(int A[],int l,int r,int search);
             scanf("%d",&A[i]);
          }
 
-      system("clear");
+      //system("clear");
 
       printf("\n\nEntered array is: \n");
       for(int i=0;i<len;i++)

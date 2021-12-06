@@ -33,6 +33,7 @@ void printArray(int arr[], int size)
 int main()
 {
     int no;
+    
     system ("clear");
 
     printf("\n| Suchinton (A2345920063)         |");

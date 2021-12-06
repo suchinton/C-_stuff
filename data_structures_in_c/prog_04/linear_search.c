@@ -3,8 +3,13 @@
 
  int main()
    {
-      system("clear");
+        system("clear");
 
+
+        printf("\n| Suchinton (A2345920063)            |");
+        printf("\n|------------------------------------|");
+        printf("\n| C Prog to implement Linear Search  |");
+        printf("\n|------------------------------------|\n");
       printf("\n\tLinear Search");
       printf("\n\t-------------");
 
@@ -20,7 +25,8 @@
             scanf("%d",&A[i]);
          }
       
-      system("clear");
+      //system("clear");
+
       printf("\n\nArray enterd by you: \n");
       for(int i=0;i<len;i++)
       printf("%d ",A[i]);

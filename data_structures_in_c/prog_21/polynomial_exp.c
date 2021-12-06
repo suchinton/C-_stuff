@@ -17,9 +17,16 @@ void display(struct node *ptr);
 void poly_add(struct node *,struct node *);
 void poly_mult(struct node *,struct node *);
 
-main( )
+int main( )
 {
- 
+
+system ("clear");
+
+printf("\n| Suchinton (A2345920063)                                                                    |");
+printf("\n|--------------------------------------------------------------------------------------------|");
+printf("\n| WAP to perform addition and multiplication of polynomial expressions using linked lists.   |");
+printf("\n|--------------------------------------------------------------------------------------------|\n");
+
  struct node *start1=NULL,*start2=NULL;
  
  printf("Enter polynomial 1 :\n");
@@ -156,11 +163,6 @@ void display(struct node *ptr)
  }
  
 }
-
-
-
-
-
  
 void poly_add(struct node *p1,struct node *p2)
 {
@@ -191,14 +193,12 @@ void poly_add(struct node *p1,struct node *p2)
  }
  }
  
- /*if poly2 has finished and elements left in poly1*/
  while(p1!=NULL)
  {
  start3=insert(start3,p1->coef,p1->expo);
  p1=p1->link;
  }
- 
- /*if poly1 has finished and elements left in poly2*/
+
  while(p2!=NULL)
  {
  start3=insert(start3,p2->coef,p2->expo);

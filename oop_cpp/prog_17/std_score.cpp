@@ -143,10 +143,10 @@ int main()
 
     char ans;
 
-    cout<<"\n| Suchinton          (A2345920063)                     |";
-    cout<<"\n|------------------------------------------------------|";
-    cout<<"\n| Prog to display lowest & highest salaries of workers |";
-    cout<<"\n|------------------------------------------------------|"<<endl;
+    cout<<"\n| Suchinton          (A2345920063)                                   |";
+    cout<<"\n|--------------------------------------------------------------------|";
+    cout<<"\n| Prog to display lowest & highest Scores of students(10 entries max)|";
+    cout<<"\n|--------------------------------------------------------------------|"<<endl;
 
     cout<<"\n\nStudent Details";
     cout<<"\n===============";

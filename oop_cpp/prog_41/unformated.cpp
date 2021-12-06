@@ -1,7 +1,7 @@
-#include <stdio.h>
+
 #include <iostream>
-#include <ncurses.h>
 #include <string>
+#include <string.h>
 #include <colour.h>
 
 using namespace std;
@@ -17,18 +17,20 @@ int main()
     cout<<"\n| program to implement Unformatted I/O  |";
     cout<<"\n|---------------------------------------|\n"<<endl;
 
-    cout<<"enter a char ";
+    cout<<"enter a char : ";
     c = getchar();
+    cout<<"Entered char : ";
     putchar(c);
 
     cin.ignore();
     cout<<endl<<GREEN<<"enter a string ";
     cin.getline(d,30);
+    cout<<"Entered string : ";
     puts(d);
 
     cout<<BLUE<<endl<<"enter a string again ";
-    cin.getline(e,7);
-    for(int i=0; i<7; i++)
+    cin.getline(e,10);
+    for(int i=0; i<=strlen(e); i++)
     {
         cout.write(e,i);
         cout<<"\n";

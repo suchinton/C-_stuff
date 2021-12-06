@@ -68,83 +68,76 @@ class Linux : public OS
         float global_adoption()
         { return 2.18; }
 };
-
-class Windows : public OS
-{
-    public:
-        void logo()
-        {
-            FILE *os_logo = fopen("win.txt","r");
-            char line[50];
-            while (fgets(line, sizeof(line), os_logo))
-                printf("%s",line);
-        }
-        
-        void latest_ver()
-        { cout<<"Windows 11, version 21H2"; }
-
-        float price()
-        { return 749.0; }
-        
-        void licensing()
-        { cout<<"non-free and closed-source"; }
-        
-        int yoo()
-        { return 1985; }
-        
-        char * resource_usage()
-        {
-            char * ru[]={"Very High"};
-            return * ru;
-        }
-        
-        char * difficulty()
-        {
-            char * diff[]={"Easy"};
-            return * diff;
-        }
-        float global_adoption()
-        { return 86.46; }
-};
-
-class MacOS : public OS
-{
-    public:
-        void logo()
-        {
-            FILE *os_logo = fopen("macos.txt","r");
-            char line[50];
-            while (fgets(line, sizeof(line), os_logo))
-                printf("%s",line);
-        }
-        
-        void latest_ver()
-        { cout<<"macOS Monterey	12.0.1"; }
-
-        float price()
-        { return 0; }
-        
-        void licensing()
-        { cout<<"non-free and closed-source"; }
-        
-        int yoo()
-        { return 1985; }
-
-        char * resource_usage()
-        {
-            char * ru[]={"Moderate"};
-            return * ru;
-        }
-
-        char * difficulty()
-        {
-            char * diff[]={"Easy"};
-            return * diff;
-        }
-
-        float global_adoption()
-        { return 13.14; }
-};
+ class Windows : public OS
+ {
+     public:
+         void logo()
+         {
+             FILE *os_logo = fopen("win.txt","r");
+             char line[50];
+             while (fgets(line, sizeof(line), os_logo))
+                 printf("%s",line);
+         }
+      
+         void latest_ver()
+         { cout<<"Windows 11, version 21H2"; }
+         float price()
+         { return 749.0; }
+      
+         void licensing()
+         { cout<<"non-free and closed-source"; }
+      
+         int yoo()
+         { return 1985; }
+      
+         char * resource_usage()
+         {
+             char * ru[]={"Very High"};
+             return * ru;
+         }
+      
+         char * difficulty()
+         {
+             char * diff[]={"Easy"};
+             return * diff;
+         }
+         float global_adoption()
+         { return 86.46; }
+ };
+ class MacOS : public OS
+ {
+     public:
+         void logo()
+         {
+             FILE *os_logo = fopen("macos.txt","r");
+             char line[50];
+             while (fgets(line, sizeof(line), os_logo))
+                 printf("%s",line);
+         }
+      
+         void latest_ver()
+         { cout<<"macOS Monterey	12.0.1"; }
+         float price()
+         { return 0; }
+      
+         void licensing()
+         { cout<<"non-free and closed-source"; }
+      
+         int yoo()
+         { return 1985; }
+         char * resource_usage()
+         {
+             char * ru[]={"Moderate"};
+             return * ru;
+         }
+         char * difficulty()
+         {
+             char * diff[]={"Easy"};
+             return * diff;
+         }
+         float global_adoption()
+         { return 13.14; }
+ };
 
 int main()
 {

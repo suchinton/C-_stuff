@@ -1,124 +1,93 @@
 #include <stdio.h>
-#include <unistd.h>
+#include <string.h>
 
-char stack[100],x[100];
-int choice,top,i;
+#define MAXSIZE 100
+#define TRUE 1
+#define FALSE 0 
 
-void push(void);
-void pop(void);
-void display(void);
-void check(void);
-
-int main()
+struct Stack 
 {
+    int top;
+    int array[MAXSIZE];
+} st;
+
+void initialize() 
+{
+    st.top = -1;
+}
+
+int isFull() 
+{   
+    if(st.top >= MAXSIZE-1)
+        return TRUE;
+    else 
+        return FALSE;
+}
+
+int isEmpty() 
+{
+    if(st.top == -1)
+        return TRUE;
+    else 
+        return FALSE;
+}
+
+void push(int num) 
+{
+    if (isFull())
+        printf("Stack is Full...\n");
+    else {
+        st.array[st.top + 1] = num;
+        st.top++;
+    }
+}
+
+int pop() 
+{
+    if (isEmpty())
+        printf("Stack is Empty...\n");
+    else 
+    {
+        st.top = st.top - 1;
+        return st.array[st.top+1];
+    }
+}
+
+int main() 
+{
+    char inputString[100], c;
+    int i, length;
     system("clear");
 
-    top=-1;
-    printf("\n Size of STACK is 100 ");
-
-    printf("\n\t STACK OPERATIONS USING ARRAY");
-    printf("\n\t ============================");
-    printf("\n\t 1)PUSH\n\t 2)POP\n\t 3)DISPLAY\n\t \n\t4)Check \n\t5)EXIT");
-
-    do
-    {
-        printf("\n Enter the Choice: ");
-        scanf("%d",&choice);
-        switch(choice)
-        {
-            case 1:
-            {
-                push();
-                break;
-            }
-            case 2:
-            {
-                pop();
-                break;
-            }
-            case 3:
-            {
-                display();
-                break;
-            }
-            case 4:
-            {
-                check();
-                break;
-            }
-            case 5:
-            {
-                printf("\n\t EXIT POINT ");
-                break;
-            }
-            default:
-            {
-                printf ("\n\t Please Enter a Valid Choice(1/2/3/4)");
-            }
-                
-        }
-    }
-    while(choice!=5);
-    return 0;
-}
-void push()
-{
-    if(top>=100-1)
-    {
-        printf("\n\tSTACK is over flow");
-        
-    }
-    else
-    {
-        printf(" Enter expression to be pushed: ");
-        scanf("%s",&x);
-        top++;
-        stack[top]=x[top];
-    }
-}
-void pop()
-{
-    if(top<=-1)
-    {
-        printf("\n\t Stack is under flow");
-    }
-    else
-    {
-        printf("\n\t The popped elements is %c",stack[top]);
-        top--;
-    }
-}
-void display()
-{
-    if(top>=0)
-    {
-        printf("\n The elements in STACK \n");
-        for(i=0; i>=top; i++)
-            printf("%c ",stack[i]);
-        printf("\n Press Next Choice");
-    }
-    else
-    {
-        printf("\n The STACK is empty");
-    }
-   
-}
-
-void check(void)
-{
-    int error,j=-1;
-    for(i=top;i<=0;i--)
-        { 
-            if((stack[i]=="(" && stack[j]==")") || (stack[i]=="{" && stack[j]=="}"))
-                {
-                    error=0;
-                    j++;
-                }
-            else error=1;
-        }
-    if(error==0)
-        printf("\nAll good");
-    else
-        printf("\nerror!!");
+    printf("\n|----------------------------------------|");
+    printf("\n| Suchinton (A2345920063)                |");
+    printf("\n|----------------------------------------|");
+    printf("\n|C prog to check paranthesis using stacks|");
+    printf("\n|----------------------------------------|\n\n");
     
+    initialize();
+
+    printf("Enter a string of paranthesis\n");
+    gets(inputString);
+    length = strlen(inputString);
+
+    for(i = 0; i < length; i++)
+    {
+        if(inputString[i] == '{' || inputString[i] == '[' ||inputString[i] == '(')
+            push(inputString[i]);
+        else if(inputString[i] == '}'|| inputString[i] == ']' || inputString[i] == ')')
+            pop();
+        else 
+        {
+            printf("Error : Invalid Character !! \n");
+            return 0;
+        }
+    }
+    
+    if(isEmpty())
+        printf("Valid Paranthesis Expression\n");
+    else 
+        printf("InValid Paranthesis Expression\n");
+        
+    return 0;
 }
