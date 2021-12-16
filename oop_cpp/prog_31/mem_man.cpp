@@ -19,7 +19,7 @@ int main()
     char *name_s = new char[count]; 
     float *marks = new float[count];
     
-    char *arr[30];
+    //char *arr[30];
     for (int i=0; i<count; i++)
     {
         cout<<"\nEnter the student "<<i+1<<" roll no. : ";     

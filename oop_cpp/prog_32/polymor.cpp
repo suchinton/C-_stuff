@@ -10,18 +10,21 @@ class laptop
         float price;
         char model[30];
         laptop()
-            {
-                this ->price= 0.0;
-                strcpy(model,"N.A.");
-
-                cout<<"\n\nLaptop (Base class) : ";
-                cout<<"\nModel : "<<model;
-                cout<<"\nPrice : ₹ "<<price<<"/-";
-            }
+        {
+            this ->price= 0.0;
+            strcpy(model,"N.A.");
+            cout<<"\n\nLaptop (Base class) : ";
+            cout<<"\nModel : "<<model;
+            cout<<"\nPrice : ₹ "<<price<<"/-";
+        }
 
         virtual void set_price()=0;
         virtual void set_model()=0;
         virtual void show()=0;
+        ~laptop()
+        {
+            cout<<"\n\nTHANK YOU!";
+        }
 };
 
 class dell : public laptop
@@ -87,4 +90,5 @@ int main()
     l ->set_model();
     l ->show();
 
+    delete l;
 }

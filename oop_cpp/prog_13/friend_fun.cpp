@@ -8,8 +8,11 @@ class rectangle
     int length, breadth;
 
     public:
-    rectangle(int length, int breadth):length(length),breadth(breadth)
-    {}
+    rectangle(int length, int breadth)//:length(length),breadth(breadth)
+    {
+        this ->length = length;
+        this ->breadth = breadth;
+    }
     friend void calcArea(rectangle s); 
  
 };

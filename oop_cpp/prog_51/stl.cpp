@@ -11,7 +11,8 @@ int main()
     cout<<"\n| Suchinton       (A2345920063)|";
     cout<<"\n|------------------------------|";
     cout<<"\n|Array Implementation in Stl   |";
-    cout<<"\n|------------------------------|"<<endl;    
+    cout<<"\n|------------------------------|"<<endl;   
+     
     array<int, 5> arr;
     array<int, 5>::iterator it;
     int choice, item;
